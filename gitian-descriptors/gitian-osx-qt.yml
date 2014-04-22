@@ -45,9 +45,9 @@ script: |
   export PATH=`pwd`/clang+llvm-3.2-x86-linux-ubuntu-12.04/bin:$PATH
   cd osx-cross-depends
 
-  tar xf /home/ubuntu/build/osx-native-depends.tar.gz
+  tar xf /home/ubuntu/build/osx-native-depends-r1.tar.gz
   export PATH=`pwd`/native-prefix/bin:$PATH
-  tar xf /home/ubuntu/build/osx-depends.tar.gz
+  tar xf /home/ubuntu/build/osx-depends-r1.tar.gz
 
   make $MAKEOPTS -f qt.mk
 
