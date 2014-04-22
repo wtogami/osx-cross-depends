@@ -50,4 +50,4 @@ script: |
   export GZIP="-9n"
   find native-prefix prefix | sort | tar --no-recursion -czf osx-depends-r1.tar.gz -T -
 
-  mv osx-depends.tar-r1.gz $OUTDIR
+  mv osx-depends-r1.tar.gz $OUTDIR
