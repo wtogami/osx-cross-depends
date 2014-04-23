@@ -80,5 +80,5 @@ script: |
 
   export GZIP="-9n"
   export REVISION=r1
-  find native-prefix SDKs | sort | tar --no-recursion -czf osx-native-depends-$REVISION.tar.gz -T -
-  mv osx-native-depends-$REVISION.tar.gz $OUTDIR
+  find native-prefix SDKs | sort | tar --no-recursion -czf osx-native-depends-mac${GBUILD_BITS}-$REVISION.tar.gz -T -
+  mv osx-native-depends-mac${GBUILD_BITS}-$REVISION.tar.gz $OUTDIR
