@@ -38,7 +38,7 @@ script: |
   export PATH=`pwd`/clang+llvm-3.2-x86-linux-ubuntu-12.04/bin:$PATH
   mkdir osx-cross-depends
   tar -C osx-cross-depends -xf osx-native-depends-r1.tar.gz
-  tar -C osx-cross-depends -xf osx-depends.tar-r1.gz
+  tar -C osx-cross-depends -xf osx-depends-1.tar.gz
   tar -C osx-cross-depends -xf osx-depends-qt-4.8.5-r1.tar.gz
   export PATH=`pwd`/osx-cross-depends/native-prefix/bin:$PATH
 
