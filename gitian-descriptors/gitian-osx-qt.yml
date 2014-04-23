@@ -51,8 +51,8 @@ script: |
 
   make $MAKEOPTS -f qt5.mk
 
-  rm -f prefix/Library/Frameworks/*.la
-  find prefix/Library/Frameworks -name "*.prl" -delete
+  rm -f prefix/lib/*.la
+  find prefix/lib -name "*.prl" -delete
 
   export GZIP="-9n"
   find native-prefix prefix | sort | tar --no-recursion -czf osx-depends-qt-5.2.1-r1.tar.gz -T -
